@@ -1,5 +1,8 @@
 {
   "name": "iconos",
-  "app_id": "",
-  "type": "ionic-angular"
+  "app_id": "ba9f1c03",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
 }

@@ -38,7 +38,13 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  purpl:      #AEBEDF,
+
+  indigo:(
+    base: #3f51b5,
+    contrast: #ffffff
+  )
 );
 
 
@@ -78,7 +84,7 @@ $colors: (
 // The premium icon font for Ionic. For more info, please see:
 // http://ionicframework.com/docs/ionicons/
 
-@import "ionic.ionicons";
+@import "ionicons";
 
 
 // Fonts
@@ -86,3 +92,28 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+@font-face {
+  font-family: 'baloo-bhai';
+  src: url('../assets/fonts/baloo-bhai.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url('../assets/fonts/lato.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'oswald';
+  src: url('../assets/fonts/oswald.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'monserrat';
+  src: url('../assets/fonts/monserrat.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'ubuntu';
+  src: url('../assets/fonts/ubuntu.woff2') format('woff2');
+}

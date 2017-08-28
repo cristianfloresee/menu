@@ -1,17 +1,28 @@
 <ion-menu [content]="content">
   <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
+    
   </ion-header>
 
   <ion-content>
+    <ion-card text-center class="hide-card">
+      <img src="http://chitita.uta.cl/fotos/0183139614.JPG" class="custom-avatar"/>
+      <h2>Cristian Flores</h2>
+      <hr>
+    </ion-card>
     <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
+      <button menuClose ion-item  *ngFor="let p of pages" [class.activeHighLight]="checkActive(p)" (click)="openPage(p)">
+        <ion-icon class="menu-icon" color="purpl" name="{{p.icon}}" item-left></ion-icon>
+        <h3 class="item-menu"><b>{{p.title}}</b></h3>
       </button>
     </ion-list>
   </ion-content>
+  
+  <ion-footer style="margin-top: 5px;">
+    <button menuClose ion-item style="margin-top: 5px;">
+      <ion-icon class="menu-icon" style="margin-top: 0px; margin-bottom: 0px; font-size: 30px;" color="purpl" name="ai-exit" item-left></ion-icon>
+      <h3 class="item-menu"><b>Salir</b></h3>
+    </button>
+  </ion-footer>
 
 </ion-menu>
 
